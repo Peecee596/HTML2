@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class Selector</title>
+        <style>
+            /* element selector */
+            body{
+                background-image:url("./Media/css2.jpg");
+                background-repeat: no-repeat;
+                background-size:cover;                
+            }
+            
+            #div1{
+                text-align: center;
+            }
+            a{
+                color: #0ff1ce ;
+                font-size: 18px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                
+            }
+            *{
+                box-sizing: border-box;
+            }
+
+
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+                }
+
+                /* Clear floats after the columns */
+             .row:after {
+                content: "";
+                display: table;
+                clear: both;
+             }
+            
+            </style>
+    </head>
+    <body>
+        <div id="div1">
+           <a href="https://www.swathisunsource.com/#"target="_blank">Home</a> &nbsp;&nbsp;
+           <a href="https://www.google.com/search?q=images&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjk-e7tkIbxAhVhwTgGHbNeAqAQ_AUoAXoECAEQAw&biw=1366&bih=657"target="_blank">Gallery</a>&nbsp;&nbsp;
+            <a href="../index.html">Registration Form</a>
+        </div>
+        <div class="row">
+            <div class="column">        
+                <img src="./Media/css1.jpg"/>
+            </div>
+            <div class="column">
+                <h1>Sunset</h1>
+            </div>
+        </div>
+
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+        <p></p>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <form>
+
+        </form>
+        <table></table>
+
+
+
+    </body>
+</html>

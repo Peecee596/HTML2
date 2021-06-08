@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: century gothic;
+    
+}
+header{
+    background-image: url(./Media/snow1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+ul{
+    float: right;
+    list-style-type:none;
+    margin-top: 25px;
+    
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding:5px 20px;
+    border:1px solid #fff;
+}
+ul li a:hover{
+    background-color: #fff;
+    color:#000;
+}
+ul li.active a{
+    background-color: #fff;
+    color:#000;
+}
