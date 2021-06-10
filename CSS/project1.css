@@ -33,3 +33,35 @@ ul li.active a{
     background-color: #fff;
     color:#000;
 }
+.logo img{
+    float:left;
+    width:130px;
+    height:auto;
+}
+.main{
+    max-width: 1200px;
+}
+.title{
+    position:absolute;
+    top:50%;
+    left:30%;
+}
+.title h1{
+    color:#fff;
+    font-size:70px;
+}
+.button{
+    position: absolute;
+    top:65%;
+    left:45%;
+}
+.btn{
+    text-decoration: none;
+    border:1px solid #fff;
+    color:#fff;
+    padding:10px 30px;
+}
+.btn:hover{
+    background-color: #fff;
+    color:#000;
+}
