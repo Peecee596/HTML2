@@ -1,0 +1,73 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: century gothic;
+}
+.main{
+    max-width: 1200px;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Media/moon1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position:center; */
+    height:100vh;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top:20px;
+    
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    border:1px solid transparent;
+    padding:5px 10px;
+    transition:0.65 ease;
+    
+}
+ul li a:hover{
+    color:#000;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+ul li.active a{
+    background-color: #fff;
+    color:#000;
+}
+.logo img{
+    float:left;
+    width:150px;
+    height: auto;
+}
+.title{
+    position:absolute;
+    top:45%;
+    left:45%;
+    transform:translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 40px;
+}
+.button{
+    position: absolute;
+    top:55%;
+    left:45%;
+    transform:translate(-50%,-50%);
+}
+.button a{
+    text-decoration: none;
+    border:1px solid #fff;
+    color:#fff;
+    padding:5px 10px;
+}
+.button a:hover{
+    background-color: #fff;
+    border: 1px solid #ffff;
+    color:#000;
+}
