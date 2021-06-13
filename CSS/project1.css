@@ -5,63 +5,46 @@
     
 }
 header{
-    background-image: url(./Media/snow1.jpg);
+    background-image: url(./Media/moon.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
 }
 ul{
-    float: right;
+    
     list-style-type:none;
-    margin-top: 25px;
+    margin-top: 15px;
     
 }
 ul li{
     display: inline-block;
+    margin:15px;
 }
 ul li a{
     text-decoration: none;
     color:#fff;
-    padding:5px 20px;
+    
     border:1px solid #fff;
 }
 ul li a:hover{
     background-color: #fff;
     color:#000;
+    color:#fff;
 }
-ul li.active a{
-    background-color: #fff;
-    color:#000;
-}
-.logo img{
-    float:left;
-    width:130px;
-    height:auto;
-}
+
 .main{
     max-width: 1200px;
 }
+.main h1{
+    color:#fff
+}
 .title{
     position:absolute;
-    top:50%;
-    left:30%;
+    left:40%;
+    border: 1px ridge #fff;
 }
-.title h1{
+.title h2{
     color:#fff;
-    font-size:70px;
-}
-.button{
-    position: absolute;
-    top:65%;
-    left:45%;
-}
-.btn{
-    text-decoration: none;
-    border:1px solid #fff;
-    color:#fff;
-    padding:10px 30px;
-}
-.btn:hover{
-    background-color: #fff;
-    color:#000;
+    font-size:20px;
+    
 }
