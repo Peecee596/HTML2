@@ -5,7 +5,7 @@
     
 }
 header{
-    background-image: url(/CSS/Media/moon1.jpeg);
+    background-image: url(./CSS/Media/moon1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
