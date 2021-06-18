@@ -21,8 +21,9 @@
     display: block;
     text-decoration: none;
     color: #ffff;
-    padding:12px 24px;
+    padding:12px 20px;
     cursor:pointer;
+    
 }
 .supermenu  ul li a:hover{
     color:#fff;
@@ -37,6 +38,7 @@
 }
 .supermenu ul li:hover .menu{
     display: block;
+    
 }
 .menu ul li{
     border-left:4px solid transparent;
