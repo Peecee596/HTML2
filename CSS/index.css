@@ -3,6 +3,11 @@
     padding: 0;
     font-family: Century Gothic;
 }
+body{
+    background-image: url("./Media/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .nav{
     background-color: goldenrod;
     width:100%;
