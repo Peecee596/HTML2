@@ -1,0 +1,67 @@
+
+body{
+    background-image:url(../Media/moon1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:1%;
+}
+#logo{
+    float:left;
+}
+#logo img{
+    height:100px;
+    width:100px;
+}
+#header{
+    padding:0;
+    margin:0;
+   
+}
+#header ul {
+    float: right;
+    list-style-type: none;
+    margin:0;
+}
+#header ul li{
+    display: inline-block;
+    padding:5px 5px;
+}
+#header ul li a {
+    text-decoration: none;
+    /* border:1px solid #000000; */
+    padding:10px 20px;
+    background-color: #99CC66;
+    color:#ffffff;
+    font-size: 20px;
+}
+#header ul li a:hover{
+    color:#99CC66;
+    background-color:#ffffff;
+}
+#title h1{
+    position: absolute;
+    top:40%;
+    left:35%;
+    color: #ffffff;
+    font-size: 50px;
+
+}
+#subtitle {
+    position: absolute;
+    top:55%;
+    left:41%;
+    
+}
+#subtitle a{
+    /* border:1px solid #000000; */
+    background-color: #99CC66;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#subtitle a:hover{
+    background-color: #ffffff;
+    color: #99CC66;
+
+}
