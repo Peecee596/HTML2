@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px 400px; */
+    grid-template-rows: 833px 600px 340px 750px 800px 600px 400px 400px 300px 200px 400px 100px;
+    background-color: aqua;
+    grid-template-columns: repeat(3,1fr) 400px;
+    
+    /* grid-template-columns: repeat(3,1fr); */
+      box-sizing: border-box;
+   
+}
+.nav{
+    padding-left:320px;
+    padding-right:320px;
+
+}
+
+.banner{
+    /* background-color: yellow; */
+    grid-column: span 4;
+    background: url(./Media/bg1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.header{
+    grid-column: span 4;
+    width:100%;
+    background-color: grey;    
+    position: fixed;
+    height: 125px;;
+    
+}
+.logo{
+    /* border:5px solod red; */
+    padding:25px;
+    margin-top:10px;
+    /* margin-left:60px; */
+    float: left;
+    
+}
+.header .navitem{
+    list-style-type: none;
+    float: right;
+    padding:25px;
+    margin-top:10px;
+    margin-right: 210px;
+    
+}
+
+.navitem .navitem1{
+    display: inline-block;
+    padding:10px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    
+}
+.padd{
+    padding-top:195px;
+    padding-left:80px;
+    
+}
+.line1{
+    font-weight: bold;
+    font-size: 71px;
+    color:navy;
+    width:20%;
+    font-family: Century Gothic;
+}
+.line2{
+    font-weight: bold;
+    font-size: 18px;
+     /* width:20%; */
+    font-family: Century Gothic;
+    margin-bottom:8px;
+}
+.line3{
+    background-color: white;
+    width:90%;
+    height:50px;
+    line-height: 50px;
+    font-size: 21px;;
+    border-radius: 8px;
+}
+.date{
+    color:skyblue;
+    font-weight: bold;
+    font-size: 22px;;
+}
+.experience{
+    background-color: cadetblue;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.leftexp{
+    background-color: slateblue;
+    padding-top:80px;
+    padding-left:60px;
+}
+.stud{
+    height:70px;
+    width:70px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    background-color:yellow;
+    margin-bottom: 5px;
+    
+}
+.stud1{
+background-image: url("./Media/stud1.jpg");
+background-size: cover;
+margin-left:630px;
+}
+
+.stud2{
+    background-image: url("./Media/stud2.jpg");
+    background-size: cover;
+    margin-left:395px;
+
+}
+
+.stud3{
+    background-image: url("./Media/stud3.jpeg");
+    background-size: cover;
+    margin-left:550px;
+
+}
+
+.stud4{
+    background-image: url("./Media/stud4.jpg");
+    background-size: cover;
+    margin-left:265px;
+}
+.stud5{
+    background-image: url("./Media/stud5.jpg");
+    background-size: cover;
+    margin-left:710px;
+    height:120px;
+    width:120px;
+
+}
+.rightexp{
+    background-color: springgreen;
+    padding-top:105px;
+}
+.details{
+    font-size: 70px;
+    font-weight: 2000px;
+    color:rgb(10, 10, 167);
+    font-family:inherit;
+    padding-left: 450px;
+
+}
+.exp{
+    line-height:30px;
+    width:84%;
+    font-size: 20px;
+}
+.name{
+    margin-top:20px;
+    color:navy;
+}
+.highlights{
+    background-color:rgb(30, 141, 245);
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color:black;
+    padding-top:100px;
+    padding-bottom: 100px;
+    padding-left:350px;
+    padding-right:150px;
+    color: #ffff;
+    
+}
+.highlight1{
+    /* border:3px solid red; */
+    width:55%;
+
+}
+.para1{
+    font-weight: bold;
+    font-size: 70px;
+    padding-bottom: 16px;
+}
+
+.para2{
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 16px;
+}
+
+.para3{
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+.aboutus{
+    background-color: crimson;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.leftaboutus{
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8,1fr);
+    /* border:1px solid yellow; */
+    /* grid-gap:5px; */
+    padding-top:60px;
+    padding-left:320px;
+}
+.bgbg1{
+    grid-row:1/3;
+    grid-column: 4/6;
+    background-image: url(./Media/bgabout.png);
+}
+
+.bgbg2{
+    grid-row:6/8;
+    grid-column: 1/3;
+    background-image: url(./Media/bgabout.png);
+}
+.bgabout{
+    grid-row:2/7;
+    grid-column: 2/5;
+    background-image: url(./Media/aboutus.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.rightaboutus{
+    background-color: yellow;
+    padding-top:100px;
+    color: navy;
+}
+.rightaboutuspara1{
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding-bottom:45px;
+}
+.rightaboutuspara2{
+    width:45%;
+    font-size: 20px;
+    line-height:30px;
+    color:#7a7a7a;
+    padding-bottom:20px;
+}
+.rightlistitem{
+    color:#7a7a7a;
+    font-size: 20px;
+    margin-left:30px;
+    /* border:1px solid brown; */
+    line-height: 35px;
+    padding-top: 10px;
+    /* list-style-type:none; */
+}
+.rightlistitem li{
+    /* padding:15px 0; */
+    font-size: 35px;
+    color:navy;  
+    width:40%;  
+}
+a{
+    font-size: 20px;
+    padding:0;
+    display: block;
+    color:#7a7a7a;
+
+}
+
+.enquiry{
+    background-color: darkgoldenrod;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding-left:320px;
+    padding-right:320px;
+
+}
+.enquiryitem1{
+    background-color: green;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    /* height:30px; */
+    color:navy;
+    padding-top:50px;
+    font-size: 35px;
+}
+.enquiryitem2{
+    background-color: darkmagenta;
+    grid-column: 3/4;
+    grid-row: 1/6;
+}
+.enquiryitem3{
+    background-color: darkblue;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    
+}
+.enquiryitem4{
+    background-color: orange;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.enquiryitem5{
+    background-color: olive;
+    grid-column: 1/2;
+    grid-row: 4/6;
+}
+.enquiryitem6{
+    background-color: violet;
+    grid-column: 2/3;
+    grid-row: 4/6;
+}
+
+.criteria{
+    background-color: darkolivegreen;
+    grid-column: span 4;
+}
+.paymethods{
+    background-color: deeppink;
+    grid-column: span 4;
+}
+.faq{
+    background-color: green;
+    grid-column: span 4;
+}
+.blog{
+    background-color: greenyellow;
+    grid-column: span 4;
+}
+.teach{
+    background-color: mediumpurple;
+    grid-column: span 4;
+}
+.begin{
+    background-color: mediumvioletred;
+    grid-column: span 4;
+}
+.footer{
+    background-color: navy;
+    grid-column: span 4;
+}
+.end{
+    background-color: red;
+    grid-column: span 4;
+}
