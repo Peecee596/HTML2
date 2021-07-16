@@ -55,7 +55,7 @@ body{
 #sidebar{
     float:right;
     /* border:1px solid #000000;   */
-    width:29%; 
+    width:29%;
     min-height:455px;
     background-color: #66CC66;
 }
@@ -70,4 +70,24 @@ body{
     text-align: right;
     clear:both;
    
+}
+@media screen and (max-width:1020px)
+{
+    #wrapper{
+        width:800px;
+    }   
+}
+
+@media screen and (max-width:810px)
+{
+    #wrapper{
+        width:500px;
+    }   
+}
+
+@media screen and (max-width:510px)
+{
+    #wrapper{
+        width:auto;
+    }   
 }
