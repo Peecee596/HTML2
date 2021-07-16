@@ -760,7 +760,7 @@ td{
     grid-column: span 8;
     font-size: 22px;
     font-weight: bold;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
  
 }
 .blogclass{
@@ -821,7 +821,7 @@ td{
 }
 
 .teach{
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     grid-column: span 4;
     display: grid;
     grid-template-columns: repeat(11,1fr);
@@ -836,11 +836,11 @@ td{
     grid-column: span 12;
     font-size: 22px;
     font-weight: bold;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
  
 }
 .teachclass{
-    background-color: aqua;
+    /* background-color: aqua; */
     font-size: 18px;
     font-weight: bold;
     width:50px;
