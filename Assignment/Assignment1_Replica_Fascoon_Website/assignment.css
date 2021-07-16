@@ -62,6 +62,7 @@
     margin-right: 70px;
     box-sizing: border-box;
     
+    
 }
 .navitem1:hover{
     color: navy;
@@ -73,7 +74,8 @@
     padding:15px;
     font-weight: bold;
     font-size: 15px;
-    /* color:black;     */
+    /* color:black; */
+    
 }
 .nav .navitem  .navitem1 .mainmenu{
     list-style-type: none;
@@ -106,13 +108,16 @@
 }
 .apply1{
     margin-left:100px;
+    margin-top:150px;
     /* border:2px solid red; */
     background-color:navy;
     border-radius: 50px;
-    padding-left:35px;
-    padding-right:35px;
     line-height: 15px;
     color:white;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left:35px;
+    padding-right:35px;
 }
 .apply1:hover{
     box-shadow: 0px 0px 10px 10px #cac9c9;
@@ -146,7 +151,29 @@
     line-height: 50px;
     font-size: 21px;;
     border-radius: 8px;
+    margin-bottom:150px;
 }
+.line4{
+    background-color:navy;
+    border-radius: 50px;
+    line-height: 15px;
+    color:white;
+    padding-top:14px;
+    padding-bottom: 14px;
+    padding-left:30px;
+    padding-right:30px;
+    width:110px;
+    margin-bottom:100px;
+}
+.line5{
+    color:white;
+}
+.contact{
+    margin-left:5px;
+    margin-right:50px;
+}
+
+
 .date{
     color:skyblue;
     font-weight: bold;
@@ -218,18 +245,40 @@ box-sizing: border-box;
 
 
 }
+.stud1:hover{
+    transform: scale(1.5);
+}
+
+.stud2:hover{
+    transform: scale(1.5);
+}
+
+.stud3:hover{
+    transform: scale(1.5);
+}
+
+.stud4:hover{
+    transform: scale(1.5);
+}
+
+.stud5:hover{
+    transform: scale(1.5);
+}
+
 .rightexp{
     /* background-color: springgreen; */
     padding-top:105px;
     box-sizing: border-box;
 }
 .details{
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 2000px;
     color:rgb(10, 10, 167);
     /* font-family:inherit; */
     padding-left: 10%;
     box-sizing: border-box;
+    transform: rotateY(176deg);
+    padding-left:350px;
 
 }
 .exp{
