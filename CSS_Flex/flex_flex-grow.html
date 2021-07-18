@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-01</title>
+    <style>
+        .container{
+            background-color: brown;
+            padding:10px;
+            display: flex;
+        }
+        .item{
+
+            /* background-color: cadetblue; */
+            border:1px solid chartreuse;
+            padding:20px;
+            margin:10px;
+            text-align: center;
+            font-weight: bold;
+            flex-grow:1;
+        }
+        .item1{
+            background-color: chocolate;
+        }
+        .item2{
+            background-color: crimson;
+            flex-grow: 2;
+        }
+        .item3{
+            background-color: lightblue;
+            flex-grow: 3;
+        }
+        .item4{
+            background-color: darkgoldenrod;
+            flex-grow: 4;
+        }
+        .item5{
+            background-color: darkkhaki;
+            flex-grow: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+    </div>
+</body>
+</html>
