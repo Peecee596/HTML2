@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-01</title>
+    <style>
+        .container{
+            /* background-color: brown; */
+            /* padding:10px; */
+            display: flex;
+           width: 300px;
+            margin:50px;
+            border:3px solid red;
+        }
+        .item{
+
+            /* background-color: cadetblue; */
+            /* border:1px solid chartreuse; */
+            /* padding:20px; */
+            /* margin:10px; */
+            font-weight: bold;
+            height:60px;
+            font-size: 20px;
+            /* width:200px; */
+        }
+        .item1{
+            background-color: chocolate;
+            flex-shrink: 1;
+
+            
+        }
+        .item2{
+            background-color: crimson;
+            /* flex-shrink: 3; */
+        }
+        .item3{
+            background-color: lightblue;
+            /* flex-shrink: 0; */
+        }
+        .item4{
+            background-color: darkgoldenrod;
+            /* flex-basis:300px;
+            flex-shrink: 1; */
+        }
+        .item5{
+            background-color: darkkhaki;
+           flex-grow:1;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='item item1'>One</div>
+        <div class='item item2'>Two</div>
+        <div class='item item3'>Three</div>
+        <div class='item item4'>Four</div>
+        <div class='item item5'>Five</div>
+        
+    </div>
+</body>
+</html>

@@ -10,24 +10,35 @@
             background-color: brown;
             padding:10px;
             display: flex;
-            flex-wrap: wrap;
-            
+            flex-direction: column;
+            /* flex-grow: 1; */
         }
         .item{
 
             /* background-color: cadetblue; */
             border:1px solid chartreuse;
-            padding:20px;
-            margin:10px;
-            text-align: center;
+            /* padding:20px; */
+            /* margin:10px; */
             font-weight: bold;
-            flex-grow: 1;
+            height:100px;
+            text-align: center;
+            
         }
         .item1{
             background-color: chocolate;
+            
         }
         .item2{
             background-color: crimson;
+            display: flex;
+            /* align-self: center; */
+        }
+        .item2 > .subitem{
+            
+            flex-grow: 1;
+            /* margin:10px; */
+            border:1px solid black;
+            background-color: violet;
         }
         .item3{
             background-color: lightblue;
@@ -43,7 +54,11 @@
 <body>
     <div class='container'>
         <div class='item item1'>1</div>
-        <div class='item item2'>2</div>
+        <div class='item item2'>
+            <div class="subitem subitem1">ABC</div>
+            <div class="subitem subitem2">XYZ</div>
+            <div class="subitem subitem3">JKL</div>
+        </div>
         <div class='item item3'>3</div>
         <div class='item item4'>4</div>
         <div class='item item5'>5</div>
