@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a={
+        fname:'Poonam',
+        lname:'Chauhan',
+        age:27,
+        email:'hello@yahoo.net',
+        salary:function()
+                {
+                    return 2500;
+                },
+        fullname:function()
+        {
+            return this.fname + " " + this.lname;
+        },
+        myself:function()
+        {
+            return this.fname+" "+this.lname+" "+this.age +" "+this.email;
+        },
+        favmovies:['Dhoom','Ready','DDLJ']
+    };
+    document.write(a);
+    document.write(a.fname);
+    console.log(a);
+    console.log(a.fname);
+    console.log(a.lname);
+    console.log(a.age);
+    console.log(a.email);
+    console.log(a.salary());
+    console.log(a.fullname());
+    console.log(a.favmovies);
+    console.log(a.favmovies[1]);
+    // document.write(a.favmovies[0]);
+    console.log(a.myself());
+</script>
+</html>

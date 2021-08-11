@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //length it counts the space
+    var str='javascript is a  is Great Language            ';
+    var a=str.length;
+    console.log(a);
+    //toLowerCase
+    var b=str.toLowerCase();
+    console.log(b);
+    //toUpperCase
+    var c=str.toUpperCase();
+    console.log(c);
+    //includes
+    var d=str.includes('is');//case sensitive exact match
+    console.log(d);
+    //startsWith
+    var e=str.startsWith('java');
+    console.log(e);
+    //endsWith
+    var f=str.endsWith('guage');
+    console.log(f);
+    //search
+    var g=str.search('is');
+    console.log(g);//index value will return
+    //match
+    var h=str.match(/is/g);//value in output
+    console.log(h);
+    document.write(h);
+    //IndexOf
+    var i=str.indexOf('is');
+    console.log(i);
+    //lastIndexOf
+    var j=str.lastIndexOf('is');
+    console.log(j);
+    //replace
+    var k =str.replace('javascript','PHP');
+    console.log(k);
+    var l=str.replace(/is/g,'are');//otherwise ony replaces 1 value
+    console.log(l);
+    //trim
+    var m=str.trim(str);
+    console.log(m);
+    //charAt
+    var n=str.charAt(11);
+    console.log(n);//alphabet is given as output depensing upon the characters
+    //charCodeAt
+    var o=str.charCodeAt(11);
+    console.log(o);//ascii no
+    //fromCharCode
+    var p=String.fromCharCode(110);
+    console.log(p);
+    //concat
+    var q=str.concat(k,m);
+    console.log(q);
+    //split
+    var r=str.split(" ");
+    console.log(r);
+    //repeat
+    var s=str.repeat(5);
+    console.log(s);
+    //slice
+    var s=str.slice(11);
+    console.log(s);
+    var t=str.slice(11,15);
+    console.log(t);
+    //substr
+    var str1='javascript isaisGreat Language';
+    var u=str1.substr(11,6);
+    console.log(u);
+    //substring
+    var v=str1.substring(3,7);
+    console.log(v);
+    //tostring
+    var rt=20;
+    var w=rt.toString();
+    console.log(w+20);
+    //valueOf-default function
+    var x=str.valueOf();
+    console.log(x);
+</script>
+</html>

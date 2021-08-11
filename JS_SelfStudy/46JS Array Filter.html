@@ -10,22 +10,13 @@
     
 </body>
 <script>
-    var ages=[89,3,67,18,14];
+    var ages=[10,34,19,100,78,2];
     console.log(ages);
-    var b=ages.some(checkadult);
+    var b=ages.filter(checkadult);
     function checkadult(age)
     {
         return age>=18;
     }
     console.log(b);
-
-    var amount=[1000,2000,500,30];
-    var e=amount.every(checkamount);
-    function checkamount(money)
-    {
-        return money>=100;
-    }
-    console.log(e);
-
 </script>
 </html>
