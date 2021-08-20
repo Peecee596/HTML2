@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test1{
+            height:100px;
+            width:100px;
+            background-color: blueviolet;
+            transition-property: height,width;
+            transition-duration: 2s;
+            transition-timing-function:ease-in;
+
+        }
+        #test1:hover{
+            height:200px;
+            width:200px;
+        }
+        #test2{
+            margin-top:70px;
+            height:100px;
+            width:100px;
+            background-color: orangered;
+            border-radius: 50px 50px;
+            transition-property: height,width;
+            transition-duration: 2s;
+            /* transition-timing-function: ease; */
+            transition-timing-function: steps(4);
+        }
+        #test2:hover{
+            height: 200px;
+            width:200px;
+            border-radius: 100px 100px;
+            background-color: orchid;
+        }
+        input{
+            width:300px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+        }
+        input:focus{
+            width:500px;
+            background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <div id ='test1'></div>
+    <div id='test2'></div>
+    <input type="text"/>
+</body>
+</html>
