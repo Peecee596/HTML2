@@ -1,113 +1,23 @@
-@media screen and (max-width: 1200px)
-{
-    #header1{
-        font-size: 18px;
-    }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.leftcontainer{
+    display: none;
 }
-
-
-
-@media screen and (max-width: 1000px) 
-{
-    *{
-        margin-left:0px;
-        margin-right: 0px;
-    }
-    #header1 #signup{
-        margin-left:10px;
-    } 
-} 
-
-@media screen and (max-width: 700px) 
-{
-    *{
-        margin-left:0px;
-        margin-right: 0px;
-    }
-    #header1 #signup{
-        margin-left:10px;
-    } 
+.rightcontainer{
+    display: none;
 }
-
-@media screen and (max-width: 480px) 
-{
-    *{
-        margin-left:0px;
-        margin-right: 0px;
-    }
-   
-    #header1 #signup{
-        margin-left:10px;
-    } 
-    #header1{
-        font-size: 20px;
-        height: 23px;
-    }
-    #coin{
-        padding-left:10px;
-        padding-right:10px;
-        height: 23px;
-        
-    }
+#header1{
+    width:590px;
 }
-
-@media screen and (max-width: 380px) 
-{
-    *{
-        margin-left:0px;
-        margin-right: 0px;
-    }
-    #header1 #signup{
-        margin-left:10px;
-        
-    } 
-    #header1{
-        font-size: 15px;
-    }
-   #imgcoin{
-       height:10px;
-       width:10px;
-   }
-   #header1{
-       padding: 3px;
-   }
-   #signup{
-    padding:2px;
-}
-#coin{
-    padding-left:2px;
-    padding-right: 2px;
     
-}
-}
 
-
-@media screen and (max-width: 295px) 
-{
-    *{
-        margin-left:0px;
-        margin-right: 0px;
-    }
-    #header1 #signup{
-        margin-left:5px;
-        
-    } 
-    #header1{
-        font-size: 14px;
-    }
-   #imgcoin{
-       height:10px;
-       width:10px;
-   }
-   #header1{
-       padding: 3px;
-   }
-   #signup{
-    padding:2px;
 }
-#coin{
-    padding-left:2px;
-    padding-right: 2px;
-    
-}
-}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
