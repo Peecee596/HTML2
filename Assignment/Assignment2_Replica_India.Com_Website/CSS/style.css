@@ -222,6 +222,10 @@ body{
     /* height: auto; */
     /* border:1px solid saddlebrown; */
 }
+.articles{
+    grid-column: 1/2;
+}
+
 #content1leftpane{
     /* border:1px solid yellow; */
     /* background-color: salmon; */
@@ -239,7 +243,7 @@ body{
 
 }
 #text{
-    /* background-color: rgb(31, 29, 29); */
+    background-color: rgb(31, 29, 29);
     color: white;
     margin-top: 320px;
     margin-bottom: 0;
@@ -267,7 +271,7 @@ body{
 .sourcetext{
     height:110px;
     width:250px;
-    border:1px solid black;
+    /* border:1px solid black; */
     margin-left:10px;
 }
 .maintext{
@@ -546,7 +550,8 @@ line-height: 24px;
     margin-left: 24px;
 }
 #mainrightpane{
-    /* background:orange; */
+    grid-column: 2/3;
+    grid-row-start: 1;
 }
 .matchheader{
     margin-left:20px;
@@ -721,7 +726,6 @@ border-bottom:1px solid rgb(245, 239, 239) ;
     text-align: center;
     padding-left:21px;
     padding-right:21px;
-    
     padding-top:2px;
     padding-bottom: 2px;
 
@@ -1299,7 +1303,7 @@ input[type=text]
     
 }
 .smallarticle{
-    height:220px;
+    height:233px;
     width:700px;
     /* background-color:blue; */
     border-bottom:1px solid #dfdfdf;

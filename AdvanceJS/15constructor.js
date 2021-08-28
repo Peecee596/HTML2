@@ -12,7 +12,7 @@ class employee
     }
     getannualleaves()
     {
-        console.log(`Annual Paid Leaves ${this.paidleaves*12+this.sickleaves}`)
+        console.log(`Annual Paid Leaves ${this.paidleaves}*12 + ${this.sickleaves}`)
     }
 }
 e1=new employee;
