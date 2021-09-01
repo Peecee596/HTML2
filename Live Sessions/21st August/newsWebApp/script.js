@@ -3,17 +3,11 @@ const getNewsData = async () => {
     await fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=398a122378434b528b1bb97dd9b712cb')
     .then(response=> response.json())
     .then(res=>{
-      console.log(res)
-      console.log(res.articles)
-      news_data = res.articles
-   
-        
-
-    })
-    .catch(err=>{
-      console.log(err)
-    })
-    return news_data
+      console.log(res);
+      console.log(res.articles);
+      news_data = res.articles;
+    }).catch(err=>console.log(err));
+     return news_data
 }
 
 const fetchNews = async()=>{
