@@ -20,7 +20,7 @@ const fetchNews = async()=>{
     topNewsHeadlines=[];
     newsheadlines.forEach(item => {
       const news=`
-    <div class="row g-0">
+    <div class="row g-0" id='border'>
           <div class="col-md-4">
             <img src="${item.urlToImage}" class="img-fluid rounded-start" alt="...">
           </div>
@@ -32,11 +32,13 @@ const fetchNews = async()=>{
             </div>
           </div>
         </div>
+        <br/>
     `
     topNewsHeadlines.push(news);  
       
     });
 
 id.innerHTML=topNewsHeadlines
+// document.getElementById('border').style.border='1px solid black';
 }
 fetchNews();
