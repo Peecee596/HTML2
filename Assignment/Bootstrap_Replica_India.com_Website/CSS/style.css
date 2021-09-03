@@ -1,6 +1,85 @@
 .container-fluid{
-border:100px solid orange;
+background-color: teal;
 }
-.orange{
-    border:10px solid red;
+.col-1{
+    background-color:palevioletred;
+    
+}
+.col-10{
+    background-color: peru;
+}
+.col-12{
+    background-color: royalblue;
+}
+
+.grid1{
+    /* border:5px solid black; */
+ 
+    background-image: url(../Media/PMpic.png);
+    background-repeat: no-repeat;
+    /* background-size: 450px 320px; */
+
+}
+#text{
+    background-color: rgb(31, 29, 29);
+    color: white;
+    margin-top: 320px;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+#text:hover{
+    color:rgb(16, 16, 214);
+}
+.grid2{
+    background-color:turquoise;
+    
+}
+.news1{
+    display: flex;
+    padding-top:10px;
+}
+.news1image{
+    height:110px;
+    width:180px;
+    /* border:1px solid red; */
+}
+.sourcetext{
+    height:110px;
+    width:250px;
+    /* border:1px solid black; */
+    margin-left:10px;
+}
+.maintext{
+    margin:0;
+    padding:0;
+    color:rgb(238, 71, 10);
+    /* letter-spacing: 1px; */
+    font-size: 15px;
+}
+.subtext{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+}
+.image1{
+    background-image: url(../Media/Facebook-Main-Article-2-238x134.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image2{
+    background-image: url(../Media/TalibanControlKabul-238x134.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image3{
+    background-image: url(../Media/india-pakistan-238x134.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image4{
+    background-image: url(../Media/pjimage-19-6-238x134.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
