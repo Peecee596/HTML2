@@ -1,3 +1,7 @@
+*{
+    margin:0;
+    padding:0;
+}
 .container-fluid{
 background-color: teal;
 }
@@ -11,75 +15,201 @@ background-color: teal;
 .col-12{
     background-color: royalblue;
 }
-
-.grid1{
-    /* border:5px solid black; */
- 
-    background-image: url(../Media/PMpic.png);
-    background-repeat: no-repeat;
-    /* background-size: 450px 320px; */
-
+.col-md-8{
+    background-color:yellow;
+}
+.pmImage{
+    width:100%;
+    height:350px;
+ }
+.check{
+    border:5px solid black;
+    padding: 0;
+    margin: 0;
 }
 #text{
-    background-color: rgb(31, 29, 29);
+    background-color: black;
     color: white;
-    margin-top: 320px;
-    margin-bottom: 0;
-    font-size: 22px;
     font-weight: bold;
-    word-spacing: 2px;
-}
-#text:hover{
-    color:rgb(16, 16, 214);
-}
-.grid2{
-    background-color:turquoise;
+    padding: 2%;
+    margin: 0;
     
 }
-.news1{
-    display: flex;
-    padding-top:10px;
+.block{
+    border: 1px solid coral;
+    margin-top:10px;
+   
 }
-.news1image{
-    height:110px;
-    width:180px;
-    /* border:1px solid red; */
-}
-.sourcetext{
-    height:110px;
-    width:250px;
-    /* border:1px solid black; */
-    margin-left:10px;
-}
-.maintext{
+.col-md-4,.d-none,.d-md-block,.col-lg-5{
     margin:0;
+    padding: 0; 
+}
+
+.image1{
+   width: 100%;
+   margin-left:0;
+   height: 100%;
+}
+
+.maintext{
     padding:0;
     color:rgb(238, 71, 10);
-    /* letter-spacing: 1px; */
     font-size: 15px;
 }
+
 .subtext{
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.5px;
-    line-height: 17px;
+    line-height: 16px;
+    text-align: justify;
+    margin-bottom: 0; 
 }
-.image1{
-    background-image: url(../Media/Facebook-Main-Article-2-238x134.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+.fa-horizontal-rule{
+    transform: rotate(90deg);
+    padding:0;
+    margin:0;
+    margin-top:10px;
+    color: rgb(233, 76, 19);
+}
+#grid3heading{
+    font-size: 22px;
+    font-weight: bold;
+}
+.topborder{
+    border-top: 1px solid rgb(175, 167, 167);
+    padding-top: 2px;
+    margin-top:5px;
+}
+.topnews{
+    margin-left:20px;
+    margin-top:5px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    border-bottom: 1px solid rgb(175, 167, 167);
+    font-size: 14px;
+    /* background-color: hotpink; */
+    line-height: 17px;
+    padding-right:5px;
+}
+
+
+/* article */
+.leftpanefullview{
+    border:1px solid rgb(177, 170, 170);
+    border-bottom: 8px solid rgb(177, 170, 170);
+    /* padding-bottom:10px; */
+    /* display: flex;
+    flex-direction: column; */
+    padding-left:1%;
+    padding-right:1%;
+    padding-top:1%;
+    margin-top:1%;
+    /* background-color: hotpink; */
+    
+}
+.leftpanetopview{
+    /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
+}
+.leftheader,.leftpara{
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(177, 170, 170);
+    padding: 1%;
+    margin: 0;
+}
+.leftheader{
+    font-size: 120%;
+    font-weight: bold;
+}
+.fa-caret-right{
+    padding-left:8px;
+    padding-right:14px;
+    color:rgb(219, 21, 21);
 }
 .image2{
-    background-image: url(../Media/TalibanControlKabul-238x134.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top:5%;
+    width: 100%;
+    /* margin-left:0; */
+    height: 65%;
+ }
+ .rightviewtopbox{
+    /* border:1px solid green; */
+    
+ }
+ .rightviewtopboxview{
+     margin-top:5%;
+     margin-right:2%;
+     /* border:1px solid red; */
+     margin-left:2%;
+     
+ }
+ .rightpanetoppara{
+     /* margin-left:1%; */
+     padding-left: 2%;
+     text-align: justify;
+ }
+ .rightviewbottompara{
+    
+    border-bottom: 1px solid rgb(177, 170, 170);
+    line-height: 20px;
+    padding-bottom: 2%;
+    font-size: 15px;
+    /* border:3px solid yellow; */
+    padding-top: 2%;
+    margin-left:2%;
+    padding-left: 0;
+     text-align: justify;
+    
+ }
+ .rightviewbottombox{
+     margin-right:2%;
+     margin-left:0;
+     
+ }
+ .image3{
+     margin:0;
+     padding: 0;
+ }
+ .col-sm-3,.col-sm-9{
+     /* border:1px solid pink; */
+ }
+ .noborder{
+     border: none;
+ }
+ .leftpanetoppara:hover,.rightpanetoppara:hover,.rightviewbottompara:hover{
+    color:blue;
+ }
+ .leftviewtopbox{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /* border:1px solid red; */
+ }
+ .color{
+     color: black;
+ }
+ .bigarticle{
+    margin-top:1%;
+    /* height:40%; */
+    /* width:700px; */
+    /* background-color:cornflowerblue; */
+    border-bottom:1px solid #dfdfdf;
 }
-.image3{
-    background-image: url(../Media/india-pakistan-238x134.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+.bigarticleimagesection{
+    width:100%;
+    height: 340px;
+    /* background-color:firebrick; */
+    
 }
-.image4{
-    background-image: url(../Media/pjimage-19-6-238x134.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+.bigarticlepara{
+    padding:5px 5px 5px 0px;
+}
+
+.bigarticlepara:hover{
+    text-decoration: underline;
+} 
+.bigarticletext{
+    color:rgb(219, 203, 203);
+    font-size: 15px;
+    
 }
