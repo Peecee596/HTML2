@@ -40,7 +40,7 @@ background-color: teal;
     margin-top:10px;
    
 }
-.col-md-4,.d-none,.d-md-block,.col-lg-5{
+.d-none,.d-md-block,.col-lg-5{
     margin:0;
     padding: 0; 
 }
@@ -212,4 +212,19 @@ background-color: teal;
     color:rgb(219, 203, 203);
     font-size: 15px;
     
+}
+
+.smallarticleimagesection{
+    margin-top: 1%;
+}
+.smallarticlesubpara1,.smallarticlesubtext1{
+    margin-left: 0.1%;
+    text-decoration: underline;
+}
+.smallarticlesubtext1{
+    color:rgb(219, 203, 203);
+    font-size: 15px;
+}
+.smallarticleimagesection{
+    border-bottom:1px solid #dfdfdf;
 }
