@@ -228,3 +228,220 @@ background-color: teal;
 .smallarticleimagesection{
     border-bottom:1px solid #dfdfdf;
 }
+.linecolor{
+    width:3px;
+    height:80px;
+    margin:0;
+    padding: 0;
+    background:linear-gradient(rgb(66, 170, 66),#d9dfd9);
+    margin-top:10px;
+    margin-left:11px;
+}
+.live,.scorecard{
+    padding-top:5px;
+    padding-bottom: 5px;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.live{
+    background:seagreen;
+    border-radius: 5px 0px 0px 5px;
+}
+.scorecard{
+    background:black;
+    border-radius: 0px 5px 5px 0px;
+   
+
+}
+.matchheader{
+    margin-top:10px;
+    margin-left:0px;
+    border-bottom: 1px solid rgb(9, 189, 9);
+    padding-bottom: 5px;
+    /* background-color: blue; */
+
+}
+.fa-external-link-alt{
+   margin-top:35px;
+   margin:0;
+   padding:0;
+}
+.arrow{
+    /* padding:0; */
+    padding-left:4px;
+    /* margin: 0; */
+    margin-top:3px;
+}
+.matchheader2{
+     border-bottom:0.1px solid rgb(245, 239, 239) ;
+     margin-left: 1px;
+     margin-top: 0px;
+    
+}
+.matchone,.matchtwo,.matchthree,.fuelone,.fueltwo{
+    margin: auto 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.matchtwo{
+    border-bottom: 3px solid darkgreen;
+    /* background-color: chartreuse; */
+}
+.matchone:hover,.matchtwo:hover,.matchthree:hover
+{
+    border-bottom: 3px solid darkgreen;
+}
+
+.matchheader3{
+    border-bottom:1px solid rgb(177, 170, 170) ;
+    margin-left: 1px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-top:10px;
+   
+}
+.matchheading1{
+    /* margin-top:25px; */
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    /* margin-right: 20px; */
+    /* padding-left: 0px; */
+    text-align: left;
+}
+.matchheading2{
+   font-size: 15px;
+    margin-top:2px;
+    line-height: 19px;
+    /* background-color: chartreuse; */
+}
+
+.matchheading3{
+    font-size: 13px;
+    margin-top:5px;
+    
+}
+.paddingzero{
+    padding:0;
+}
+.fuelline{
+    background:linear-gradient(black,grey);
+}
+.fuelheader1{
+    margin-top:7px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(80, 83, 80);
+    margin-left:0px;
+    padding-bottom: 5px;
+    /* background-color: blue; */
+}
+.fuelheader2{
+    border-bottom: 1px solid rgb(80, 83, 80);
+    margin-left: 1px;
+    margin-top: 0px;
+   
+}
+.fuelone:hover
+{
+    border-bottom: 3px solid red;
+
+}
+.fueltwo{
+    border-bottom: 3px solid red;
+}
+.fuelcontent{
+    border-bottom: 1px solid rgb(170, 164, 164);
+    padding-top:10px;
+    margin-left:0px;
+}
+.fuelcontent1,.fuelcontent2,.fuelcontent3
+{
+    margin-bottom:10px;
+    text-align: center;
+    padding-left:21px;
+    padding-right:21px;
+    padding-top:2px;
+    padding-bottom: 2px;
+
+}
+.fa-caret-up{
+    color:red;
+    padding-left:5px;
+}
+.fuelcontent3border{
+    border:1px solid rgb(40, 201, 40);
+    border-radius: 15px;
+    font-size: 12px;
+    padding-left:1px;
+    padding-right:1px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+}
+.noborder{
+    border-bottom: 1px solid transparent;
+    padding-bottom:20px;
+}
+
+.add2{
+    
+    background:#d2d2d2;
+    height:2.5%;
+    margin-left:3px;
+    margin-right: 3px;
+    padding:20px;
+    text-align: center;
+    box-shadow:1px 2px 1px #ccc;
+    border-radius: 5px;
+}
+.positionsearch{
+    position: relative;
+}
+.form1font i{
+    position: absolute;
+    left:180px; 
+     top:5px;
+ 
+}
+.far{
+    background-color: white;
+    color:rgb(184, 180, 180);
+    border:1px solid transparent;
+}
+input[type=text]
+{
+    padding:11px;
+    padding-left:15px;
+    padding-right:55px;
+}
+.paraform{
+    font-size: 10px;
+    color:rgb(58, 56, 56)
+}
+.formsearch
+{
+    color:white;
+    background-color:#a1a1a1;
+    padding:8px;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:25px;
+    width:100px;
+    margin-left:70px;
+}
+.formsearch:hover{
+    background:#666;
+    transition: .02s ease;
+}
+.paraform2{
+    text-decoration: underline;
+    font-size:12px;
+    /* word-spacing: 2px; */
+    letter-spacing: 1px;
+}
+

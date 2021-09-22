@@ -1,0 +1,36 @@
+.para{
+    color:green;
+    font-weight: bold;
+    background: linear-gradient(to right, #659999, #f4791f);
+    font-size: 24px;
+    font-family: Century Gothic;
+}
+.Appbody{
+    background-color: black;
+    /* background-image: url('https://images.unsplash.com/photo-1541508186468-098826081946?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80'); */
+    background-image:url('https://images.unsplash.com/photo-1531748049999-7217dc4cfbd1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGdsaXR0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.input{
+    width:200px;
+    border:2px solid grey;
+    border-radius:4px;
+    padding:10px;
+    margin:5px;
+}
+.submit{
+    font-size:20px;
+    text-align: center;
+    border:2px solid grey;
+    border-radius:10px;
+    width: 140px;
+    height:40px;
+    align-content: center;
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);;
+}
+label{
+    color: #1a2a6c;
+    font-weight: bold;
+    font-size: 30px;
+}
