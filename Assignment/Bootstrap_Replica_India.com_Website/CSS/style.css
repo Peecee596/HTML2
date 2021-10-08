@@ -553,3 +553,21 @@ input[type=text]
     margin-bottom:5px;
     font-size: 15px;
 }
+.trendingnewsline{
+    background:linear-gradient(rgb(255, 0, 140),rgb(250, 122, 192));
+}
+ .trendingnewsheader1{
+    border-bottom: ipx solid rgb(255, 0, 140);
+ }
+ .trendingnewsimage1{
+     background-image: url(../Media/trendingnews1.webp);
+     background-size: cover;
+ }
+ .trendingnewsimage2{
+    background-image: url(../Media/trendingnews2.webp);
+    background-size: cover;
+}
+.trendingnewsimage3{
+    background-image: url(../Media/trendingnews3.webp);
+    background-size: cover;
+}
