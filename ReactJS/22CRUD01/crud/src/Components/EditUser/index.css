@@ -1,0 +1,28 @@
+h1{
+    background-color: lightslategrey;
+    margin-right:10%;
+    margin-left:10%;
+}
+.inputbox{
+    width:10%;
+    padding:10px;
+    margin-right:5px;
+    text-align: center;
+
+}
+
+.button{
+    width:8%;
+    padding:10px;
+    padding-right:10px;
+    padding-left:10px;
+    font-weight: bold;
+    border-radius: 10px 10px;
+    border:1px solid red;
+    margin:10px;
+    text-decoration: none;
+       
+}
+input[type = text]:focus{
+    background-color:darkgrey;
+}

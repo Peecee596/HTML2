@@ -571,3 +571,52 @@ input[type=text]
     background-image: url(../Media/trendingnews3.webp);
     background-size: cover;
 }
+
+.bollywoodnewsline{
+    background:linear-gradient(rgb(255, 0, 140),rgb(250, 122, 192));
+}
+.bollywoodmainheader{
+    text-align:center;
+    font-size: 23px;
+    font-weight: bold;
+    padding:15px;
+    border-bottom: 1px solid #666;
+    /* margin-bottom: 10px; */
+}
+.bollywoodsubheader{
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(255, 0, 140);
+}
+.bollywoodsubheaderimage{
+    background-image: url(../Media/bollywoodhead.webp);
+    height:38px;
+    background-repeat: no-repeat;
+    width:110px;
+    background-size: contain;
+    
+}
+.bollywoodsubheadertext{
+    padding-top:15px;
+}
+.bollywoodnewsimage1{
+    background-image: url(../Media/bollywood1.webp);
+    background-size: cover;
+}
+.bollywoodnewsimage2{
+    background-image: url(../Media/bollywood2.webp);
+    background-size: cover;
+}
+.bollywoodnewsimage3{
+    background-image: url(../Media/bollywood3.webp);
+    background-size: cover;
+}
+.bollywoodnewsimage4{
+    background-image: url(../Media/bollywood4.webp);
+    background-size: cover;
+}
+.bollywoodnewsimage5{
+    background-image: url(../Media/bollywood5.webp);
+    background-size: cover;
+}
