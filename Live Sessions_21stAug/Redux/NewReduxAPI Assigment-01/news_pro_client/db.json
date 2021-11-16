@@ -1,0 +1,18 @@
+{
+    "enquiries":[
+     {
+      "id":1, 
+      "name":"Shivam Chauhan",
+      "email":"shivam48@gmail.com",
+      "subject":"News Update to be changed",
+      "message":"live headlines"
+     },
+     {
+      "id":2, 
+      "name":"Renu Chauhan",
+      "email":"renu48@gmail.com",
+      "subject":"News Update to be changed",
+      "message":"live headlines"
+     }
+]
+}
