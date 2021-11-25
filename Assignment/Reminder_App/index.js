@@ -33,7 +33,7 @@ date.value=dateNew;
 date.disabled=true;
 date.classList.add("card-text");
 date.classList.add("input1");
-date.style.width='13rem';
+date.style.width='24rem';
 date.style.margin='5px';
 date.style.paddingBottom="7px";
 
@@ -46,7 +46,7 @@ input.value=reminderName;
 input.disabled=true;
 input.classList.add("card-text");
 input.classList.add("input2");
-input.style.width='13rem';
+input.style.width='24rem';
 input.style.margin='5px';
 // input.style.paddingTop="5px";
 input.style.paddingBottom="7px";
@@ -55,7 +55,13 @@ input.style.paddingBottom="7px";
 itemBox.appendChild(input)
 
 
+let buttonBox=document.createElement("div")
+buttonBox.classList.add("buttonBox")
+// buttonBox.style.border='1px solid green'
+buttonBox.style.marginBottom="10px"
 
+//Append button box
+itemBox.appendChild(buttonBox)
 
 //create edit button
 let editButton=document.createElement("button");
@@ -70,7 +76,7 @@ editButton.style.marginLeft="6px";
 editButton.innerHTML="EDIT"
 
 //Append edit button
-itemBox.appendChild(editButton)
+buttonBox.appendChild(editButton)
 
 //create delete button
 let removeButton=document.createElement("button");
@@ -84,11 +90,12 @@ removeButton.style.marginLeft="6px";
 removeButton.innerHTML="DELETE"
 
 //Append delete button
-itemBox.appendChild(removeButton)
+buttonBox.appendChild(removeButton)
 
 //Add eventlistener
 editButton.addEventListener('click',()=>{
     this.edit(input);
+    this.edit(date);
 })
 
 //Add eventlistener 
@@ -119,5 +126,19 @@ function check(){
         
     }
 }
+
 //check the inputs and date while clicking on adding
 addButton.addEventListener("click",check);
+
+//create arrays
+values = [];
+
+function addRecord() {
+  //var inp = document.getElementById('inputtext');
+  var inp=inputFirst.value;
+  values.push(inputFirst.value);
+//   inp.value = "";
+  console.log(values) 
+}
+
+addButton.addEventListener("click",addRecord);
