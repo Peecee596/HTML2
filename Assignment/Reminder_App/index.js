@@ -1,6 +1,6 @@
 //Fetch all 3 Inputs
 const addButton=document.querySelector(".addButton");
-var inputFirst=document.querySelector(".inputtext")
+var inputFirst=document.querySelector(".inputtext");
 let dateFirst=document.querySelector('input[type="date"]');
 
 //Fetch the Container
@@ -8,10 +8,13 @@ const container=document.querySelector('.dataContainer');
 
 //class and constructor
 class reminder{
-
+    
     constructor(reminderName,dateNew){
 
-        this.createReminder(reminderName,dateNew)
+        this.createReminder(reminderName,dateNew);
+        this.x=90;
+        this.y=100;
+
     }
 //create reminder
 createReminder(reminderName,dateNew){
@@ -50,7 +53,7 @@ input.style.width='24rem';
 input.style.margin='5px';
 // input.style.paddingTop="5px";
 input.style.paddingBottom="7px";
-
+console.log(input.value)
 //Append input box
 itemBox.appendChild(input)
 
@@ -112,33 +115,26 @@ edit(reminderitem){
 delete(reminderitem){
     container.removeChild(reminderitem)
 }
+//create arrays
 
 }
-
 
 //check whether the reminder and date is entered or not
 function check(){
     if(inputFirst.value !='' && dateFirst.value !='' )
     {
-        new reminder(inputFirst.value,dateFirst.value);        
+        new reminder(inputFirst.value,dateFirst.value); 
+        
+        console.log(reminder.x,reminder.y);
+          
         inputFirst.value="";
         dateFirst.value="";
-        
     }
 }
 
 //check the inputs and date while clicking on adding
 addButton.addEventListener("click",check);
 
-//create arrays
-values = [];
 
-function addRecord() {
-  //var inp = document.getElementById('inputtext');
-  var inp=inputFirst.value;
-  values.push(inputFirst.value);
-//   inp.value = "";
-  console.log(values) 
-}
 
-addButton.addEventListener("click",addRecord);
+
