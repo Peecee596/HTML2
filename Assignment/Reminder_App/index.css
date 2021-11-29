@@ -72,3 +72,11 @@ input:focus {
     background: linear-gradient(to right, #e43a15, #e65245);
     border: none;
 }
+
+.dataContainer1{
+  position: absolute;
+  width: auto;
+  /* top:1%; */
+  left:105%;
+  margin-top: 0;
+}
