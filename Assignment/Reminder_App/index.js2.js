@@ -42,6 +42,7 @@ date.style.width='24rem';
 date.style.margin='5px';
 date.style.paddingBottom="7px";
 console.log(dateNew);
+this.date=date.value
 //Append date input box
 itemBox.appendChild(date)
 
@@ -55,7 +56,8 @@ input.style.width='24rem';
 input.style.margin='5px';
 // input.style.paddingTop="5px";
 input.style.paddingBottom="7px";
-//console.log(input.value)
+this.input=input.value;
+console.log(this.input)
 //Append input box
 itemBox.appendChild(input)
 
@@ -116,7 +118,7 @@ buttonBox.appendChild(removeButton)
 //Add eventlistener on editr
 editButton.addEventListener('click',()=>{
    this.edit(input,date)
-    this.save(input,date)
+    //this.save(input,date)
     
 })
 //Add eventlistener on save
@@ -147,47 +149,23 @@ save(saveinput,savedate){
 
     for(var i=0;i<values.length;i++)
 {
-        if(this.editsaveinput==values[i][1]&&this.editsavedate==values[i][0])
+        if(this.input==values[i][1]&&this.date==values[i][0])
     {
               values[i][1]=saveinput.value;
               values[i][0]=savedate.value;
-              
+              console.log(values[i][0],values[i][1]);
     }
-
-}
-
-
-}
-//delete reminder
-delete(reminderitem){
-    container.removeChild(reminderitem)
-}
-//create arrays
-
-}
-
-//check whether the reminder and date is entered or not
-function check(){
-    if(inputFirst.value !='' && dateFirst.value !='' )
+    if(this.input==values[i][1])
     {
-        new reminder(inputFirst.value,dateFirst.value); 
-
-       
+        return;
     }
+
 }
-
-
-//const values = [];
-
-function addRecord() {
-  //var inp = document.getElementById('inputtext');
-  var inp=inputFirst.value;
-  var dat=dateFirst.value;
-  values.push([dat,inp]);
-  inp.value = ""; 
-  inputFirst.value="";
-  dateFirst.value=""; 
-  console.log(values)
+var inp=this.input;
+var dat=this.date;
+values.push([dat,inp]);
+//inp = ""; 
+console.log(values)
  // document.getElementById("displaybox2").contentWindow.location.reload(true);
 //document.getElementById("displaybox2").innerHTML=document.getElementById("displaybox2").innerHTML;
 const d= new Date();
@@ -238,14 +216,111 @@ for(var i=0;i<values.length;i++)
         displayItem.appendChild(input)
 
         console.log(values[i][0],values[i][1]);
-    
-        //if(date.value==values[i][0])
- 
+     
     }
- 
+    //location.reload();
+    //setTimeout(location.reload(),50000);
+    if(input.value==values[i][1])
+{
+    return;
 }
-  }
+
+}
+
+
+
+
+}
+//delete reminder
+delete(reminderitem){
+    container.removeChild(reminderitem)
+}
+//create arrays
+
+}
+
+//check whether the reminder and date is entered or not
+function check(){
+    if(inputFirst.value !='' && dateFirst.value !='' )
+    {
+        new reminder(inputFirst.value,dateFirst.value); 
+        inputFirst.value="";
+        dateFirst.value=""; 
+  
+       
+    }
+}
+
+
+//const values = [];
+
+// function addRecord() {
+//     var inp=inputFirst.value;
+//     var dat=dateFirst.value;
+//     values.push([dat,inp]);
+//     inp.value = ""; 
+//     inputFirst.value="";
+//     dateFirst.value=""; 
+//     console.log(values)
+//    // document.getElementById("displaybox2").contentWindow.location.reload(true);
+//   //document.getElementById("displaybox2").innerHTML=document.getElementById("displaybox2").innerHTML;
+//   const d= new Date();
+//   var ds=d.getFullYear()+"-"+(d.getMonth()+1)+"-"+("0" + (d.getDate())).slice(-2);
+//   console.log(ds)
+//   for(var i=0;i<values.length;i++)
+//   {
+      
+//       if(values[i][0]==ds)
+//       {
+          
+//           var displayItem=document.createElement("div")
+//           displayItem.classList.add("item1")
+      
+//           displayItem.style.border='1px solid green'
+//           displayItem.style.marginBottom="10px"
+          
+//           //container1.appendChild(displayItem)
+//           rightContainer.appendChild(displayItem)
+//           var header=document.createElement("h4");
+//           header.innerHTML="Todays Reminder"
+          
+//           displayItem.appendChild(header)
+  
+//           let date=document.createElement('input');
+//           date.setAttribute("type", "date");
+//           date.value=values[i][0];
+//           console.log(date.value);
+//           date.disabled=true;
+//           date.classList.add("card-text");
+//           date.classList.add("input3");
+//           date.style.width='24rem';
+//           date.style.margin='5px';
+//           date.style.paddingBottom="7px";
+//            //Append date
+          
+//            displayItem.appendChild(date)
+  
+//           //input box create  
+//           var input=document.createElement("input");
+//           input.value=values[i][1];
+//           input.disabled=true;
+//           input.classList.add("card-text");
+//           input.classList.add("input3");
+//           input.style.width='24rem';
+//           input.style.margin='5px';
+//           input.style.paddingBottom="7px";
+//           displayItem.appendChild(input)
+  
+//           console.log(values[i][0],values[i][1]);
+      
+//           //if(date.value==values[i][0])
+   
+//       }
+   
+//   }
+  
+//   }
 
 //check the inputs and date while clicking on adding
 addButton.addEventListener("click",check);
-addButton.addEventListener("click",addRecord);
+//addButton.addEventListener("click",addRecord);
