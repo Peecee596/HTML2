@@ -51,6 +51,9 @@ input.value=reminderName;
 input.disabled=true;
 input.classList.add("card-text");
 input.classList.add("input2");
+input.setAttribute('id','para');
+
+
 input.style.width='24rem';
 input.style.margin='5px';
 // input.style.paddingTop="5px";
@@ -154,6 +157,9 @@ save(reminderitem,reminderdate){
     }
 
 }
+
+   
+
 }
 //delete reminder
 delete(reminderitem){
@@ -175,9 +181,12 @@ function check(){
 
 
 //const values = [];
+const clearDisplay = () => {
+    while (rightContainer.firstChild) rightContainer.removeChild(rightContainer.firstChild);
+  };
 
 function addRecord() {
-  //var inp = document.getElementById('inputtext');
+clearDisplay();  
   var inp=inputFirst.value;
   var dat=dateFirst.value;
   values.push([dat,inp]);
@@ -241,6 +250,8 @@ for(var i=0;i<values.length;i++)
     }
  
 }
+
+
   }
 
 //check the inputs and date while clicking on adding
