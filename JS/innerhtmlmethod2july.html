@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML</title>
+    <style>
+        body{
+            background-image: url('../Project/Project3/Media/image2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color:#ffff;
+            text-align: center;
+            margin-top:2%;
+
+        }
+        p{
+            width:300px;
+            text-align: justify;
+            margin-top: 10px;
+            padding:10px;
+            margin-left:39%;
+            color:coral;
+            font-size: 20px;
+            border-bottom: 1px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo">Welcome to JS</h1>
+    <h1 id="demo"></h1>
+    <h2 id="demo2"></h2>
+    <p id="para"></p>
+    
+</body>
+<script>
+    document.getElementById("demo").innerHTML="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iusto?";
+    document.getElementById("demo2").innerHTML="Lorem ipsum dolor sit amet";
+    document.getElementById("para").innerHTML="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga deleniti dolor, eius dicta excepturi nam cum reiciendis soluta voluptates. Error, distinctio quo maxime assumenda ducimus enim sunt dolorum optio omnis.";
+      
+</script>
+</html>
