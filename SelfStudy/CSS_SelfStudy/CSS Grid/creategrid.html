@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Grid</title>
+        <style>
+            .container{
+                background-color:brown;
+                width:100%;
+                display: grid;
+                /* coumns and shows divide */
+                grid-template-rows:150px 150px 150px;
+                grid-template-columns: 1fr 1fr;
+                /* gap between columns and rows */
+                grid-row-gap:10px;
+                grid-column-gap:10px;
+            
+            }
+            .griditem1{
+                background-color: blue;
+                padding: 45px;
+                text-align: center;
+            } 
+                
+            .griditem2{
+                background-color: orangered;
+                padding: 45px;
+                text-align: center;
+            }
+            .griditem3{
+            background-color: yellowgreen;
+            padding: 45px;
+            text-align: center;
+            }
+
+            .griditem4{
+            background-color: blueviolet;
+            padding: 45px;
+            text-align: center;
+            }
+            .griditem5{
+            background-color: greenyellow;
+            padding: 45px;
+            text-align: center;
+            }
+            .griditem6{
+            background-color: pink;
+            padding: 45px;
+            text-align: center; 
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="griditem1">1</div>
+            <div class="griditem2">2</div>
+            <div class="griditem3">3</div>
+            <div class="griditem4">4</div>
+            <div class="griditem5">5</div>
+            <div class="griditem6">6</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id='list1'>
+        <li>Orange</li>
+        <li>PIneapple</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+</body>
+<script>
+    //replace orange by guava
+
+    var newElement=document.createElement('li');
+    var newText=document.createTextNode('Guava');
+    newElement.appendChild(newText);
+    console.log(newElement);
+
+    var target=document.getElementById('list1');
+    var oldElement=target.children[0];
+    target.replaceChild(newElement,oldElement);
+
+// ///
+// var newElement2=document.getElementById('list1').insertAdjacentHTML("beforebegin",'<li> Online Store</li>');
+
+// var oldElement2=target.children[0];
+// target.replaceChild(newElement2,oldElement2);
+// console.log(newElement2);
+
+
+
+
+var newElement3=document.createElement('li')
+var newText=document.createTextNode('Hello Everyone');
+newElement3.appendChild(newText);
+
+
+console.log(newElement3);
+
+var target3=document.getElementById('list1');
+var oldElement3=target3.children[1];
+console.log(oldElement3);
+target3.replaceChild(newElement3,oldElement3);
+
+//Remove Child
+
+var target5=document.getElementById('list1');
+var oldElement5=target5.children[3];
+console.log(oldElement5);
+target5.removeChild(oldElement5);
+
+var oldElement6=target5.children[3];
+console.log(oldElement6);
+target5.removeChild(oldElement6);
+</script>
+</html>

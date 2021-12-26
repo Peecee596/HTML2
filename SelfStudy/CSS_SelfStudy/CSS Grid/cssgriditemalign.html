@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment</title>
+    <style>
+        .container{
+            background-color:palevioletred;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:repeat(2, 150px);
+
+            grid-gap:15px;
+            grid-auto-rows:70px;
+                /* align-items: start;
+                justify-items:center */
+            place-items: start center;
+        }
+        #one{
+            background-color: yellow;
+            place-self: end center;
+        }
+        #two{
+            background-color: red;
+        }
+        #three{
+            background-color: brown;
+            color:white;
+        }
+        #four{
+            background-color: green;
+        }
+        #five{
+            background-color: lawngreen;
+        }
+        #six{
+            background-color: black;
+            color:white
+        }
+        #seven{
+            background-color: orchid;
+        }
+        #eight{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one">one</div>
+        <div id="two">two</div>
+        <div id="three">three</div>
+        <div id="four">four</div>
+        <div id="five">five</div>
+        <div id="six">six</div>
+        <div id="seven">seven</div>
+        <div id="eight">eight</div>
+    </div>
+    
+</body>
+</html>

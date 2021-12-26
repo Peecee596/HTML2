@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function fullname(fname='yahoo',lname='baba')
+    {
+        var a= fname+' '+lname;
+        return a;
+    }
+    var fn=fullname('name');
+    document.write(fn);
+
+
+    function addition(a=3,b=2)
+    {
+        var z=a+b;
+        return z;
+    }
+    var x=addition(45,78);
+    document.write(x);
+    document.write('<br/>')
+    var y=addition(0);
+    document.write(y);
+    document.write('<br/>')
+    
+
+    function sum(eng,math,sci)
+    {
+        var s =eng+math+sci;
+        return s;
+    }
+    function percentage(tt)
+    {
+        var per = tt/300*100;
+        document.write(per);
+    }
+    
+
+    var total=sum(100,89,90);
+    percentage(total);
+    // document.write(total);
+
+</script>
+</html>

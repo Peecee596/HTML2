@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-03</title>
+    <style>
+        .containerrow_overflow{
+            background-color: brown;
+            padding:10px;
+            display: flex;
+            flex-direction: row;
+            width:300px;
+            margin-bottom: 10px;
+        }
+        .containerrowflexwrap{
+            background-color: brown;
+            padding:10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width:300px;
+            margin-bottom: 10px;
+        }
+        .containerrowflexwrapreverse{
+            background-color: brown;
+            padding:10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            width:300px;
+            margin-bottom: 10px;
+        }
+        
+        .containercolumn_overflow{
+            background-color:yellowgreen;
+            padding:10px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            width:300px;
+            border:1px solid red;
+        }
+        .containercolumn_flexwrap{
+            background-color:yellowgreen;
+            padding:10px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width:300px;
+            margin-top:1000px;
+            /* margin: 10px; */
+        }
+        .containercolumn_flexwrapreverse{
+            background-color:yellowgreen;
+            padding:10px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            width:300px;
+            /* margin-top:500px; */
+            margin: 10px;
+        }
+        .item{
+
+            /* background-color: cadetblue; */
+            border:1px solid chartreuse;
+            padding:20px;
+            margin:10px;
+            font-weight: bold;
+            
+        }
+        .item1{
+            background-color: chocolate;
+        }
+        .item2{
+            background-color: crimson;
+        }
+        .item3{
+            background-color: lightblue;
+        }
+        .item4{
+            background-color: darkgoldenrod;
+        }
+        .item5{
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+    <!-- problem -->
+    <div class='containerrow_overflow'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>6</div>
+        <div class='item item2'>7</div>
+        <div class='item item3'>8</div>
+        <div class='item item4'>9</div>
+        <div class='item item5'>10</div>
+        <div class='item item1'>11</div>
+        <div class='item item2'>12</div>
+        <div class='item item3'>13</div>
+        <div class='item item4'>14</div>
+        <div class='item item5'>15</div>
+
+    </div>
+
+    <!-- solution -->
+    <div class='containerrowflexwrap'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>6</div>
+        <div class='item item2'>7</div>
+        <div class='item item3'>8</div>
+        <div class='item item4'>9</div>
+        <div class='item item5'>10</div>
+        <div class='item item1'>11</div>
+        <div class='item item2'>12</div>
+        <div class='item item3'>13</div>
+        <div class='item item4'>14</div>
+        <div class='item item5'>15</div>
+
+    </div>
+
+    <div class='containerrowflexwrapreverse'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>6</div>
+        <div class='item item2'>7</div>
+        <div class='item item3'>8</div>
+        <div class='item item4'>9</div>
+        <div class='item item5'>10</div>
+        <div class='item item1'>11</div>
+        <div class='item item2'>12</div>
+        <div class='item item3'>13</div>
+        <div class='item item4'>14</div>
+        <div class='item item5'>15</div>
+
+    </div>
+    <!-- problem -->
+    <div class='containercolumn_overflow'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>6</div>
+        <div class='item item2'>7</div>
+        <div class='item item3'>8</div>
+        <div class='item item4'>9</div>
+        <div class='item item5'>10</div>
+        <div class='item item1'>11</div>
+        <div class='item item2'>12</div>
+        <div class='item item3'>13</div>
+        <div class='item item4'>14</div>
+        <div class='item item5'>15</div>
+
+    </div>
+    <!-- solution -->
+    <div class='containercolumn_flexwrap'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>6</div>
+        <div class='item item2'>7</div>
+        <div class='item item3'>8</div>
+        <div class='item item4'>9</div>
+        <div class='item item5'>10</div>
+        <div class='item item1'>11</div>
+        <div class='item item2'>12</div>
+        <div class='item item3'>13</div>
+        <div class='item item4'>14</div>
+        <div class='item item5'>15</div>
+
+    </div>
+    <!-- flex wrap reverse -->
+    <div class='containercolumn_flexwrapreverse'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>6</div>
+        <div class='item item2'>7</div>
+        <div class='item item3'>8</div>
+        <div class='item item4'>9</div>
+        <div class='item item5'>10</div>
+        <div class='item item1'>11</div>
+        <div class='item item2'>12</div>
+        <div class='item item3'>13</div>
+        <div class='item item4'>14</div>
+        <div class='item item5'>15</div>
+
+    </div>
+</body>
+</html>

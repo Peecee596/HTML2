@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Lines</title>
+    <style>
+        .container{
+            text-align: center;   
+            margin:5px;
+            width:700px;         
+            /* background-color:brown; */
+            display:grid;
+            grid-template-rows:[header-start]120px[header-end menu-start]60px[menu-end box-start] 100px[box-end content-start] 400px[content-end footer-start] 50px[footer-end];
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap:5px;
+            grid-row-gap:15px;
+            color: azure;
+            font-weight: bold;
+            /* padding: 50px; */
+        }
+        #header{
+            /* padding:45px; */
+            background-color: tomato;
+            grid-row-start: header-start;
+            grid-row-end:header-end;
+            grid-column-start:1;
+            grid-column-end:4;
+
+        }
+        
+        #menu{
+                /* padding:45px; */
+            background-color: yellow;
+            grid-row-start:menu-start;
+            grid-row-end:menu-end;
+            grid-column-start:1;
+            grid-column-end:4;
+        }
+        
+        #box1{
+            /* padding:45px; */
+            background-color: lawngreen;
+            grid-row-start:box-start;
+            grid-row-end:box-end;
+            grid-column-start:1;
+            grid-column-end: 2;
+        } 
+        #box2{
+            /* padding:45px; */
+            background-color: lawngreen;
+            grid-row-start:box-start;
+            grid-row-end:box-end;
+            grid-column-start:2;
+            grid-column-end: 3;
+        }
+        
+        #sidebar{
+            /* padding:45px; */
+            background-color: green;
+            
+            grid-row-start:box-start;
+            grid-row-end:content-end;
+            grid-column-start:3;
+            grid-column-end: 4;
+        }
+        #content{
+            /* padding:45px; */
+            background-color: blue;
+            grid-row-start:content-start;
+            grid-row-end:content-end;
+            grid-column-start:1;
+            grid-column-end: 3;
+        }
+        #footer{
+            /* padding:45px; */
+            background-color: red;
+            grid-column-start:1;
+            grid-column-end:4;
+            grid-row-start:footer-start;
+            grid-row-end:footer-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">Header</div>
+        <div id="menu">Menu</div>
+
+        <div id="box1">Box1</div>
+        <div id="box2">Box2</div>
+        
+        <div id="sidebar">Sidebar</div>
+        <div id="content">Content</div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var now= new Date();
+    console.log(now);
+    //get functions
+    // date function
+    console.log(now.toDateString());
+    console.log(now.getDate());
+    console.log(now.getFullYear());
+    console.log(now.getMonth());
+    console.log(now.getDay());
+
+    //time
+    console.log(now.getHours());
+    console.log(now.getMinutes());
+    console.log(now.getSeconds());
+    console.log(now.getMilliseconds());
+
+    //set methods
+    now.setDate(21);
+    console.log(now);
+    now.setFullYear(2022);
+    console.log(now);
+    now.setMonth(3);
+    console.log(now);
+
+    //custom date
+    // console.log(now.setDate(09),+'/'+now.setMonth(1)+'/'+now.setFullYear(1991));   
+</script>
+</html>

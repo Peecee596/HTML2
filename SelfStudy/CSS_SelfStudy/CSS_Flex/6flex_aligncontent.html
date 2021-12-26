@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-01</title>
+    <style>
+        .container{
+            background-color: brown;
+            padding:10px;
+            display: flex;
+            margin:10px;
+        }
+        .container_spacearound{
+            background-color: brown;
+            padding:10px;
+            display: flex;
+            width:500px;
+            height:300px;
+            margin:10px;
+            flex-wrap: wrap;
+            align-content: space-around;    
+        }
+        .container_spaceevenly{
+            background-color: brown;
+            padding:10px;
+            display: flex;
+            width:500px;
+            height:300px;
+            margin:10px;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+        }
+        .container_spacebetween{
+            background-color: brown;
+            padding:10px;
+            display: flex;
+            width:500px;
+            height:300px;
+            margin:10px;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .item{
+
+            /* background-color: cadetblue; */
+            border:1px solid chartreuse;
+            padding:20px;
+            margin:10px;
+            font-weight: bold;
+            
+        }
+        .item1{
+            background-color: chocolate;
+        }
+        .item2{
+            background-color: crimson;
+        }
+        .item3{
+            background-color: lightblue;
+        }
+        .item4{
+            background-color: darkgoldenrod;
+        }
+        .item5{
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+    </div>
+
+    <div class='container_spacearound'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+    </div>
+
+    <div class='container_spaceevenly'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+    </div>
+
+    <div class='container_spacebetween'>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+        <div class='item item1'>1</div>
+        <div class='item item2'>2</div>
+        <div class='item item3'>3</div>
+        <div class='item item4'>4</div>
+        <div class='item item5'>5</div>
+    </div>
+
+</body>
+</html>

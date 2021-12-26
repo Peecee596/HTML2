@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var array1=new Array();
+    array1[0]='poonam';
+    array1[1]='shivam';
+    array1[3]='renu';
+    document.write(array1+'<br/>');
+    document.write('<ul>');
+    for(var i=0;i<=3;i++)
+    {
+        document.write('<li>'+array1[i]+'</li>');
+    }
+    document.write('</ul>');
+
+
+    var array2=new Array(3);
+    //take values from user
+    for(var j=0;j<3;j++)
+    {
+        array2[j]=prompt('Enter the value: ');
+    }
+    document.write('<ul>');
+    for(var k=0;k<3;k++)
+    {
+        document.write('<li>'+array2[k]+'</li>');
+    }
+    document.write('</ul>');
+    </script>
+</html>
