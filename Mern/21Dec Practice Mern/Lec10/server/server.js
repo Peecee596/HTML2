@@ -21,6 +21,6 @@ db.mongoose.connect(db.url,{
 .catch(err=>{console.log("Connection failed")})
 
 require('./routes/news.routes')(app)
-z
+
 const PORT=3000;
 app.listen(PORT,()=>{console.log(`Server started at Port ${PORT}`)})
