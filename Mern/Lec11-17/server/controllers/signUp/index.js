@@ -18,22 +18,23 @@ exports.signUp=(req,res)=>{
             res.status(500).send({message:err})
             return;
         }
+       
         if(req.body.roles){
             Role.find({ name: { $in: req.body.roles}},(err,roles)=>{
-        if(err){
-                    res.status(500).send({message:err})
-                    return;
-                }
-                user.roles=roles.map(role=>role._id)
-                user.save(err=>{
-                    if(err){
+            if(err){
                         res.status(500).send({message:err})
                         return;
                     }
-                    res.send({message:"User has been registered successfully"})
-                })
-
+            user.roles=roles.map(role=>role._id)//save the role
+            user.save(err=>{
+                if(err){
+                    res.status(500).send({message:err})
+                    return;
+                }
+                res.send({message:"New User has been Registered"})
             })
+
+                })
         }
         else{
             Role.findOne({name:"user"},(err,role)=>{
