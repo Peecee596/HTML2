@@ -574,6 +574,8 @@ input[type=text]
 
 .bollywoodnewsline{
     background:linear-gradient(rgb(255, 0, 140),rgb(250, 122, 192));
+    margin:0;
+    padding: 0;
 }
 .bollywoodmainheader{
     text-align:center;
@@ -584,22 +586,55 @@ input[type=text]
     /* margin-bottom: 10px; */
 }
 .bollywoodsubheader{
-    margin-left: 24px;
+    margin:0;
+    /* padding:0; */
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(255, 0, 140);
+    border: 1px solid yellowgreen;
+    
+    /* padding: 10px 0px 0px 7px; */
 }
 .bollywoodsubheaderimage{
     background-image: url(../Media/bollywoodhead.webp);
     height:38px;
     background-repeat: no-repeat;
-    width:110px;
+    width:45%;
     background-size: contain;
+    border: 1px solid yellowgreen;
+    /* background-position: center; */
     
 }
 .bollywoodsubheadertext{
-    padding-top:15px;
+    padding-top:7px;
+    border: 1px solid yellowgreen;
+    width:45%;
+    font-weight: normal;
+    text-align: right;
+    padding-right: 0;
+    font-size: 18px;
 }
+.bollywoodlifemenuheader{
+    margin:0;
+    margin-left:12px;
+    padding:0;
+    /* border:1px solid red; */
+}
+.bollywoodsubmenuheader{
+    padding:0;
+    margin:0;
+    border-bottom: 2px solid rgb(255, 0, 140);
+    text-align: center;
+    border:1px solid red;
+    display: flex;
+}
+.bollywoodsubmenucontent{
+    font-weight: normal;
+    width:100%;
+}
+.bollywoodcontentinfo{
+    /* margin-left:10px; */
+    border: 1px solid red;
+}
+
 .bollywoodnewsimage1{
     background-image: url(../Media/bollywood1.webp);
     background-size: cover;
@@ -619,4 +654,100 @@ input[type=text]
 .bollywoodnewsimage5{
     background-image: url(../Media/bollywood5.webp);
     background-size: cover;
+}
+
+
+.cricketnews{
+    margin-top:20px;
+}
+.cricketnewsline{
+    background:linear-gradient(rgb(255, 9, 9),rgb(248, 88, 88));
+    margin:0;
+    padding: 0;
+}
+.cricketsubheaderimage{
+    background-image: url(../Media/cricketnew.png);
+    height:38px;
+    background-repeat: no-repeat;
+    width:45%;
+    background-size: contain;
+    border: 1px solid yellowgreen;
+}
+.cricketsubheadertext{
+    /* padding-top:2px; */
+    padding-top:7px;
+    border: 1px solid yellowgreen;
+    width:45%;
+    font-weight: normal;
+    text-align: right;
+    padding-right: 0;
+    font-size: 18px;
+}
+.cricketnewsimage1{
+    background-image: url(../Media/cricket1.webp);
+    background-size: cover;
+}
+.cricketnewsimage2{
+    background-image: url(../Media/cricket2.webp);
+    background-size: cover;
+}
+.cricketnewsimage3{
+    background-image: url(../Media/cricket3.webp);
+    background-size: cover;
+}
+.cricketnewsimage4{
+    background-image: url(../Media/cricket4.webp);
+    background-size: cover;
+}
+.cricketnewsimage5{
+    background-image: url(../Media/cricket5.webp);
+    background-size: cover;
+}
+.technologynewsline{
+    background:linear-gradient(rgb(209, 8, 209) ,rgb(247, 126, 247) );
+}
+.technologynewsline{
+    background:linear-gradient(rgb(31, 153, 31),rgb(161, 231, 161));
+    
+}
+.technologysubheader{
+    
+    border-bottom: 1px solid rgb(209, 8, 209);
+}
+.technologysubheaderimage{
+    background-image: url(../Media/technology\ new.png);
+    height:38px;
+    background-repeat: no-repeat;
+    width:110px;
+    background-size: contain;
+}
+.technologysubtext{
+    padding-top: 5px;
+}
+.technologynewsimage1{
+    background-image: url(../Media/technology1.webp);
+    background-size: cover;
+}
+.technologynewsimage2{
+    background-image: url(../Media/technology2.webp);
+    background-size: cover;
+}
+.technologynewsimage3{
+    background-image: url(../Media/technology3.webp);
+    background-size: cover;
+}
+.technologynewsimage4{
+    background-image: url(../Media/technology4.webp);
+    background-size: cover;
+}
+.technologynewsimage5{
+    background-image: url(../Media/technology5.webp);
+    background-size: cover;
+}
+.healthysubheaderimage{
+    background-image: url(../Media/healthyheader.svg);
+    height:38px;
+    background-repeat: no-repeat;
+    width:110px;
+    background-size: contain;
 }
